@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_title"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_tip"
+                    android:text="@string/hphm_tip"
+                    android:paddingBottom="10dp"/>
+
+            <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hphm_edit_bg">
+
+                <Spinner
+                        android:id="@+id/sheng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:entries="@array/sheng"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:spinnerMode="dialog"/>
+
+                <!--<Spinner-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:entries="@array/letter"-->
+                        <!--android:layout_margin="5dp"-->
+                        <!--android:gravity="center"-->
+                        <!--android:visibility="gone"-->
+                        <!--android:background="@drawable/sp_bg"-->
+                        <!--android:spinnerMode="dialog"/>-->
+
+                <EditText
+                        android:id="@+id/hphm_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        style="@style/edit_tip"
+                        android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:background="@null"/>
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+            <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hphm_button_bg"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="15dp"
+                    android:text="保存"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

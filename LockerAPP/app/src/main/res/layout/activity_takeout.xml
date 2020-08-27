@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_title"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_tip"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/hphm_tip_1"/>
+
+            <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                <EditText
+                        android:id="@+id/code"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        style="@style/edit_tip"
+                        android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:background="@drawable/hphm_edit_bg"/>
+
+                <LinearLayout
+                        android:id="@+id/tv_error_tip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                    <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:text="!"
+                            android:textStyle="bold"
+                            style="@style/text_tip_tanhao"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/text_tip"
+                            android:textColor="@color/red"
+                            android:text="@string/takeout_error_1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hphm_button_bg"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="15dp"
+                    android:text="立即取出"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

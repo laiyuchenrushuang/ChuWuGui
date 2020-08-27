@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:textSize="@dimen/text_super_30sp"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:textColor="@color/theme_color"
+            tools:ignore="MissingConstraints"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="50dp">
+        <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal">
+
+            <RelativeLayout
+                    android:id="@+id/save"
+                    android:layout_width="@dimen/main_width"
+                    android:layout_height="@dimen/main_height"
+                    android:background="@drawable/save">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/ic_launcher"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="存物"
+                        android:textSize="@dimen/text_super_20sp"
+                        android:paddingBottom="5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"/>
+
+            <RelativeLayout
+                    android:id="@+id/take_out"
+                    android:layout_width="@dimen/main_width"
+                    android:layout_height="@dimen/main_height"
+                    android:background="@drawable/takeout">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/ic_launcher"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="取物"
+                        android:textSize="@dimen/text_super_20sp"
+                        android:paddingBottom="5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+                android:layout_below="@id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_tip"
+                android:layout_marginTop="5dp"
+                android:layout_alignLeft="@id/ll"
+                android:text="@string/main_tip"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

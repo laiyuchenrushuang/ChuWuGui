@@ -1,0 +1,19 @@
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">智慧储物柜</string>
+    <string name="app_sfz_tip">请使⽤员⼯卡在下⽅刷卡区进⾏身份识别</string>
+    <string name="app_sfz_tip_1">您的卡证⽆效，请联系相关⼯作⼈员办理正确卡</string>
+    <string name="time_limmit">%1$ds</string>
+    <string name="hphm_tip">请填写登记信息</string>
+    <string name="main_tip">现有可存储空格⼦%1$d个</string>
+    <string name="response_tip">柜⻔已开，请存储后关闭柜⻔</string>
+    <string name="text_tip_1">误关⻔，未存取物品?</string>
+    <string name="bn_text_1">重新打开</string>
+    <string name="text_tip_2">柜体有故障，⽆法开⻔?\n请联系⼯作⼈员，联系电话：</string>
+    <!--<string name="text_tip_2">f028-48256089</string>-->
+    <string name="text_tip_2_telephone">028–48256089</string>
+    <string name="hphm_tip_1">请输⼊取件码</string>
+    <string name="hphm_tip_error_1">请查看号牌号码输入是否正确</string>
+    <string name="takeout_error_1">您的物品已取出，取件码已失效。\n如果因误关⻔⽽未能取出物品，请联系⼯作⼈员，联系电话：028-48256089
+</string>
+</resources>

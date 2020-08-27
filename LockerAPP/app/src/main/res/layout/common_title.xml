@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_parent">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:visibility="invisible"
+        android:src="@mipmap/back_icon"/>
+
+    <TextView
+        android:id="@+id/tv_titile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_super_30sp"
+        android:text="@string/app_name"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/theme_color"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"
+        android:padding="6dp"/>
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"
+        android:padding="6dp"/>
+    <Button
+            android:id="@+id/back"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:background="@drawable/back_view"
+            android:layout_below="@id/iv_back"/>
+    <TextView
+            android:id="@+id/time"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="60s"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/theme_color"
+            android:layout_below="@id/iv_right"
+            android:background="@null"
+            android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
